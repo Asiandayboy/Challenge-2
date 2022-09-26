@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+$overpass-font: "Overpass", sans-serif;
+$circle-color: hsl(214, 19%, 22%);
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(216, 12%, 8%);
+    font-family: $overpass-font;
+}
+
+.card {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.container {
+    background-color: hsl(213, 19%, 18%);
+    width: min(90%, 375px);
+    margin: 0 auto;
+    padding: 2em 1.4em;
+    border-radius: 25px;
+    font-size: 15px;
+
+
+    .star_icon {
+        background-color: $circle-color;
+    }
+
+    .content {
+        color: hsl(217, 12%, 63%);
+        h1 {
+            color: white;
+            font-size: 1.65rem;
+        }
+
+        .content_rating {
+            margin: 1.75em 0;
+            ul {
+                display: flex;
+                flex-direction: row;
+                list-style: none;
+                justify-content: space-between;
+                padding: 0;
+            }
+        }
+    }
+
+    .submit_button {
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+        font-family: $overpass-font;
+
+        border: none;
+        border-radius: 50px;
+        width: 100%;
+        padding: 1em;
+        letter-spacing: .2em;
+        font-weight: 700;
+    }
+
+    .circle {
+        background-color: $circle-color;
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+.thank-you_subtext {
+    color: hsl(25, 97%, 53%);
+    background-color: $circle-color;
+    padding: .5em 1em;
+    text-align: center;
+    border-radius: 50px;
+    width: max-content;
+    margin: 1.5em 0 .5em 0;
+}
+
+.centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

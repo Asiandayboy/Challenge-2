@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+}
+
+.card {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  background-color: hsl(213deg, 19%, 18%);
+  width: min(90%, 375px);
+  margin: 0 auto;
+  padding: 2em 1.4em;
+  border-radius: 25px;
+  font-size: 15px;
+}
+.container .star_icon {
+  background-color: hsl(214deg, 19%, 22%);
+}
+.container .content {
+  color: hsl(217deg, 12%, 63%);
+}
+.container .content h1 {
+  color: white;
+  font-size: 1.65rem;
+}
+.container .content .content_rating {
+  margin: 1.75em 0;
+}
+.container .content .content_rating ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+}
+.container .submit_button {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+  font-family: "Overpass", sans-serif;
+  border: none;
+  border-radius: 50px;
+  width: 100%;
+  padding: 1em;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+.container .circle {
+  background-color: hsl(214deg, 19%, 22%);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thank-you_subtext {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(214deg, 19%, 22%);
+  padding: 0.5em 1em;
+  text-align: center;
+  border-radius: 50px;
+  width: max-content;
+  margin: 1.5em 0 0.5em 0;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
