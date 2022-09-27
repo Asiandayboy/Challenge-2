@@ -45,16 +45,35 @@ body {
   justify-content: space-between;
   padding: 0;
 }
+.container .content .content_rating ul li {
+  cursor: pointer;
+  -webkit-user-select: none;
+  transition: 0.25s;
+}
+.container .content .content_rating ul li:hover {
+  background-color: hsl(25deg, 97%, 53%);
+  color: white;
+}
+.container .content .content_rating ul .selected {
+  background-color: hsl(216deg, 12%, 54%);
+  color: white;
+}
 .container .submit_button {
   background-color: hsl(25deg, 97%, 53%);
   color: white;
   font-family: "Overpass", sans-serif;
+  cursor: pointer;
   border: none;
   border-radius: 50px;
   width: 100%;
   padding: 1em;
   letter-spacing: 0.2em;
   font-weight: 700;
+  transition: 0.25s;
+}
+.container .submit_button:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
 }
 .container .circle {
   background-color: hsl(214deg, 19%, 22%);

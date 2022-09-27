@@ -2,6 +2,7 @@
 
 $overpass-font: "Overpass", sans-serif;
 $circle-color: hsl(214, 19%, 22%);
+$dark-grey: hsl(216, 12%, 54%);
 
 *,
 ::after,
@@ -50,6 +51,22 @@ body {
                 list-style: none;
                 justify-content: space-between;
                 padding: 0;
+
+                li {
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    transition: .25s;
+
+                    &:hover {
+                        background-color: hsl(25, 97%, 53%);
+                        color: white;
+                    }
+                }
+
+                .selected {
+                    background-color: $dark-grey;
+                    color: white;
+                }
             }
         }
     }
@@ -58,6 +75,7 @@ body {
         background-color: hsl(25, 97%, 53%);
         color: white;
         font-family: $overpass-font;
+        cursor: pointer;
 
         border: none;
         border-radius: 50px;
@@ -65,6 +83,12 @@ body {
         padding: 1em;
         letter-spacing: .2em;
         font-weight: 700;
+        transition: .25s;
+
+        &:hover {
+            background-color: white;
+            color: hsl(25, 97%, 53%);
+        }
     }
 
     .circle {
@@ -98,3 +122,4 @@ body {
     align-items: center;
     text-align: center;
 }
+
